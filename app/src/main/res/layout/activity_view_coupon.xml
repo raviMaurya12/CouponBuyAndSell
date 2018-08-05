@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".ViewCoupon">
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="3dp"
+        android:background="?attr/colorButtonNormal"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView32"
+            android:layout_below="@+id/viewCoupon_price"
+            android:text="Remark:"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView32"
+            android:layout_below="@+id/viewCoupon_negotiable"
+            android:text="Price:"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView32"
+            android:layout_below="@+id/viewCoupon_meal"
+            android:text="Negotiable:"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView32"
+            android:layout_below="@+id/viewCoupon_date"
+            android:text="Meal"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView32"
+            android:layout_below="@+id/viewCoupon_caterer"
+            android:text="Date:"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/viewCoupon_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="195dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/defaultpic" />
+
+            <TextView
+                android:id="@+id/viewCoupon_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewCoupon_pic"
+                android:layout_centerHorizontal="true"
+                android:text="Name"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/viewCoupon_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewCoupon_contactNumber"
+                android:layout_centerHorizontal="true"
+                android:text="Address"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/viewCoupon_contactNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_below="@+id/viewCoupon_name"
+                android:layout_centerHorizontal="true"
+                android:text="Contact Number"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="275dp"
+            android:text="Coupon Details:"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viewCoupon_caterer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/textView32"
+            android:layout_marginEnd="60dp"
+            android:text="Caterer Information"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/viewCoupon_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/viewCoupon_caterer"
+            android:layout_below="@+id/viewCoupon_caterer"
+            android:text="Date's Coupon"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/viewCoupon_meal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/viewCoupon_caterer"
+            android:layout_below="@+id/viewCoupon_date"
+            android:text="Meal Information"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/viewCoupon_negotiable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/viewCoupon_caterer"
+            android:layout_below="@+id/viewCoupon_meal"
+            android:text="Negotiable"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/viewCoupon_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/viewCoupon_caterer"
+            android:layout_below="@+id/viewCoupon_negotiable"
+            android:layout_centerHorizontal="true"
+            android:text="Price:"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viewCoupon_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/viewCoupon_caterer"
+            android:layout_below="@+id/viewCoupon_price"
+            android:text="Remark:"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView29"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="10dp"
+            android:text="Caterer:"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/viewCoupon_buyButton"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="4dp"
+        android:background="@color/colorAccent"
+        android:text="BUY COUPON"
+        android:textColor="@android:color/background_light"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/viewCoupon_callButton"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/viewCoupon_buyButton"
+        android:layout_alignStart="@+id/viewCoupon_buyButton"
+        android:layout_marginBottom="4dp"
+        android:background="@color/colorAccent"
+        android:text="Call seller"
+        android:textColor="@android:color/background_light"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/viewCoupon_chatButton"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/viewCoupon_buyButton"
+        android:layout_alignEnd="@+id/viewCoupon_buyButton"
+        android:layout_marginBottom="4dp"
+        android:background="@color/colorAccent"
+        android:text="Chat seller"
+        android:textColor="@android:color/background_light"
+        android:textSize="15sp" />
+
+</RelativeLayout>

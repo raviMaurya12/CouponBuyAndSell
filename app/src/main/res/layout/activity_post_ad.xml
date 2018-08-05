@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ToolBarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostAd">
+
+    <include
+        android:id="@+id/postAd_toolbar"
+        layout="@layout/app_bar_layout"></include>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="76dp"
+        android:text="Caterer:"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/postAd_caterer_spinner"
+        android:layout_width="324dp"
+        android:layout_height="35dp"
+        android:layout_alignStart="@+id/textView12"
+        android:layout_below="@+id/textView12"
+        android:entries="@array/caterer_array"
+        android:prompt="@string/caterer_prompt"
+        android:spinnerMode="dialog" />
+
+    <Button
+        android:id="@+id/postAd_postButton"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp"
+        android:background="@color/colorAccent"
+        android:text="Post coupon For sale"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView12"
+        android:layout_below="@+id/postAd_caterer_spinner"
+        android:layout_marginTop="10dp"
+        android:text="Date:"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/postAd_date_spinner"
+        android:layout_width="324dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/textView16"
+        android:layout_centerHorizontal="true"
+        android:entries="@array/date_array"
+        android:prompt="@string/date_prompt"
+        android:spinnerMode="dialog" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/postAd_date_spinner"
+        android:layout_below="@+id/postAd_date_spinner"
+        android:layout_marginTop="10dp"
+        android:text="Meal:"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/postAd_meal_spinner"
+        android:layout_width="324dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/textView19"
+        android:layout_centerHorizontal="true"
+        android:entries="@array/Meal_array"
+        android:prompt="@string/meal_prompt"
+        android:spinnerMode="dialog" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/postAd_date_spinner"
+        android:layout_below="@+id/postAd_meal_spinner"
+        android:layout_marginTop="10dp"
+        android:text="Price:"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/postAd_price"
+        android:layout_width="107dp"
+        android:layout_height="35dp"
+        android:layout_alignStart="@+id/postAd_date_spinner"
+        android:layout_below="@+id/textView22"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView22"
+        android:layout_marginEnd="85dp"
+        android:text="Negotiable:"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/postAd_negotiableSpinner"
+        android:layout_width="102dp"
+        android:layout_height="35dp"
+        android:layout_alignStart="@+id/textView23"
+        android:layout_below="@+id/textView22"
+        android:entries="@array/boolean_array"
+        android:prompt="@string/negotiable_prompt"
+        android:spinnerMode="dialog" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/postAd_date_spinner"
+        android:layout_below="@+id/postAd_price"
+        android:layout_marginTop="10dp"
+        android:text="Remark(Optional):"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/postAd_remark"
+        android:layout_width="333dp"
+        android:layout_height="71dp"
+        android:layout_alignStart="@+id/postAd_date_spinner"
+        android:layout_below="@+id/textView24"
+        android:background="@drawable/edit_text"
+        android:ems="10"
+        android:hint="Enter remark here..."
+        android:inputType="textMultiLine" />
+
+</RelativeLayout>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MyCoupon">
+
+    <include
+        android:id="@+id/myCoupon_toolbar"
+        layout="@layout/app_bar_layout"></include>
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="349dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="61dp"
+        android:background="@android:color/background_light">
+
+        <RelativeLayout
+            android:id="@+id/inner_rel_two"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/inner_rel_one"
+            android:background="?attr/colorButtonNormal">
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="People Responded:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/myCoupon_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView38"
+                android:layout_marginTop="5dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/inner_rel_one"
+            android:layout_width="match_parent"
+            android:layout_height="203dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/myCoupon_postedDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/myCoupon_caterer"
+                android:layout_below="@+id/textView30"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Posting Date"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/myCoupon_negotiable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView31"
+                android:layout_toEndOf="@+id/myCoupon_edit"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Yes/No"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/myCoupon_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/myCoupon_caterer"
+                android:layout_below="@+id/textView26"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Rs.60"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/myCoupon_meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/myCoupon_caterer"
+                android:layout_below="@+id/textView25"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Meal Informstion"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/myCoupon_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/myCoupon_caterer"
+                android:layout_below="@+id/textView6"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Coupon Date"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Caterer:"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView6"
+                android:layout_below="@+id/textView6"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Date:"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView6"
+                android:layout_below="@+id/textView25"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Meal:"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView6"
+                android:layout_below="@+id/textView26"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Price:"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView6"
+                android:layout_below="@+id/textView28"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Negotiable:"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView6"
+                android:layout_below="@+id/textView30"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Posted:"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/myCoupon_edit"
+                android:layout_width="163dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:text="Edit Price"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/mycoupon_delete"
+                android:layout_width="159dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/myCoupon_edit"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:text="delete"
+                android:textColor="@android:color/background_light" />
+
+            <TextView
+                android:id="@+id/myCoupon_caterer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textView6"
+                android:layout_toEndOf="@+id/myCoupon_edit"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Caterer Name"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

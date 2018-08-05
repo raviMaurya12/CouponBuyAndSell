@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="324dp"
+        android:layout_height="152dp"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView36"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="TextView"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="Are You Sure?"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView33"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/holo_green_dark"
+            android:text="Button"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/button2"
+            android:layout_marginLeft="3dp"
+            android:layout_toEndOf="@+id/button2"
+            android:background="@color/colorAccent"
+            android:text="Button"
+            android:textColor="@android:color/background_light" />
+    </RelativeLayout>
+</RelativeLayout>

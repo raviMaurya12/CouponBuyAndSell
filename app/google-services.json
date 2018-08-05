@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "90735261944",
+    "firebase_url": "https://coupon-buy-and-sell-eac8d.firebaseio.com",
+    "project_id": "coupon-buy-and-sell-eac8d",
+    "storage_bucket": "coupon-buy-and-sell-eac8d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90735261944:android:2d6944cb52c02286",
+        "android_client_info": {
+          "package_name": "com.example.lenovo.buyandsell"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "90735261944-hcdt9sh0r6k0mon30qc4ic7df8eld3nf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lenovo.buyandsell",
+            "certificate_hash": "502a289d12440b92cc8a2e57997058c6dbad5dc9"
+          }
+        },
+        {
+          "client_id": "90735261944-gtv19d1vp7knd3q6i13rh8ka6g1ek65l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmrOcaGFncnSvFZl_kKwmNqb5xzWxeOdA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "90735261944-gtv19d1vp7knd3q6i13rh8ka6g1ek65l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
