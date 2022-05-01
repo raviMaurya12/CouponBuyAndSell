@@ -7,3 +7,4 @@ The app uses FirebaseAuth,FirebaseDatabase and FirebaseStorage for Authenticatio
 The App is created on Android Studio so the project coulb be directly cloned in Android Studio.
 
 Find Screecshots in the Coupon Buy and Sell Folder.
+Coupon buy and sell/Screenshot_20180810-025441.png
